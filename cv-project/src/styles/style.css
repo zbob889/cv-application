@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto';
 }
 
 @import url('https://fonts.googleapis.com/css?family=Roboto');
@@ -42,7 +43,7 @@
 #previewButton {
 }
 
-#identity {
+.identity {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -54,18 +55,23 @@
     box-sizing: border-box
 }
 
-.text {
-    width: 100%;
-    flex: 1;
+.identityDisplay {
+    font-size: 24px;
 }
 
-form {
-    width: 100%;
+.identityEdit {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 5px;
 }
 
-.textInput {
-    flex: 1;
+.identityEdit>input {
+    outline: none;
+    width: 50%;
+    height: 30px;
+    font-size: 24px;
 }

@@ -1,20 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
+import IdentityCards from './components/IdentityCards';
 
-class App extends Component {
-  constructor() {
-    super();
-
-    this.state = {
-      identity: {
-        firstName: 'First Name',
-        lastName: 'Last Name',
-        email: 'Email',
-        phoneNumber: 'Phone Number',
-      }
-    };
-  };
-
-  render() {
+export default function App(){
 
     return(
       <div id='container'>
@@ -25,13 +12,13 @@ class App extends Component {
             <button id='previewButton'>Preview</button>
           </div>
 
+
+          <IdentityCards />
+
           
 
 
         </div>
       </div>
     );
-  };
 };
-
-export default App;
